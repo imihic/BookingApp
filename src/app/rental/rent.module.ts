@@ -1,8 +1,10 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
+import { CommonModule } from '@angular/common';
 import {RentDetailComponent} from './rent-detail/rent-detail.component';
 import {RentListingComponent} from './rent-listing/rent-listing.component';
 import {RentComponent} from './rent.component';
+import {RentService} from './shared/rent.service';
 
 const routes : Routes = [
   {path: 'rents', component: RentComponent, children: [
@@ -16,10 +18,14 @@ const routes : Routes = [
   declarations: [
     RentComponent,
     RentDetailComponent,
-    RentListingComponent
+    RentListingComponent,
   ],
   imports: [
     RouterModule.forChild((routes)),
+    CommonModule
+  ],
+  providers: [
+    RentService
   ]
 })
 export class RentModule { }

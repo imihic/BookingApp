@@ -1,1 +1,18 @@
-<h1>Rent listing component</h1>
+<div class="rent-listings-page">
+  <h1 class="title">Your home all around the world</h1>
+  <div class="row">
+    <div *ngFor="let rent of rents" class="col-md-4 col-xs-6">
+      <a href="#">
+        <div class="card rent-card">
+          <img class="card-img-top" src="http://via.placeholder.com/350x250" alt="">
+          <div class="card-block">
+            <h6 class="card-subtitle">Whole {{rent.category}} &#183; {{rent.city}}</h6>
+            <h4 class="card-title">{{rent.title}}</h4>
+            <p class="card-text">${{rent.price}} per night</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+

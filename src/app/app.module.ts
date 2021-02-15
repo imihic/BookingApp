@@ -18,6 +18,7 @@ import {RentModule} from './rental/rent.module';
       AppRoutingModule,
       RentModule
     ],
+
     providers: [],
     bootstrap: [AppComponent]
 })
