@@ -5,6 +5,7 @@ import {RentDetailComponent} from './rent-detail/rent-detail.component';
 import {RentListingComponent} from './rent-listing/rent-listing.component';
 import {RentComponent} from './rent.component';
 import {RentService} from './shared/rent.service';
+import {RentCardComponent} from '../shared/rent-card/rent-card.component';
 
 const routes : Routes = [
   {path: 'rents', component: RentComponent, children: [
@@ -19,6 +20,7 @@ const routes : Routes = [
     RentComponent,
     RentDetailComponent,
     RentListingComponent,
+    RentCardComponent
   ],
   imports: [
     RouterModule.forChild((routes)),
