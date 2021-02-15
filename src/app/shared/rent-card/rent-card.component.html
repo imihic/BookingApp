@@ -1,10 +1,11 @@
-<a href="#">
+<a routerLink="/rents/{{rent._id}}">
   <div class="card rent-card">
-    <img class="card-img-top" src="http://via.placeholder.com/350x250" alt="">
+    <img class="card-img-top" [src]="rent.image" alt="">
     <div class="card-block">
-      <h6 class="card-subtitle">Whole {{rent.category}} &#183; {{rent.city}}</h6>
+      <h6 class="card-subtitle type-{{rent.category}}">Whole {{rent.category}} &#183; {{rent.city}}</h6>
       <h4 class="card-title">{{rent.title}}</h4>
       <p class="card-text">${{rent.price}} per night</p>
     </div>
   </div>
 </a>
+<button>Change Data</button>

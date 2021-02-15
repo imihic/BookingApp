@@ -1,13 +1,13 @@
-<section
-  *ngIf="rent && rent._id"
-  id="rentalDetails">
+<section id="rentalDetails">
   <div class="upper-section">
     <div class="row">
       <div class="col-md-6">
-        <img [src]="rent.image" alt="">
+        <!-- TODO: Display rental image -->
+        <img src="#" alt="">
       </div>
       <div class="col-md-6">
-        <img [src]="rent.image" alt="">
+        <!-- TODO: Display rental image -->
+        <img src="#" alt="">
       </div>
     </div>
   </div>
@@ -16,18 +16,23 @@
     <div class="row">
       <div class="col-md-8">
         <div class="rental">
-          <h2 class="rental-type type-{{rent.category}}">
-            {{rent.shared ? 'Shared' : 'Whole'}} {{rent.category}}
-          </h2>
-          <h1 [bookingHighlight]="'transparent'" class="rental-title">{{rent.title}}</h1>
-          <h2 class="rental-city">{{rent.city | upper:'firstLetterUpper'}}</h2>
+          <!-- TODO: Display shared category -->
+          <h2 class="rental-type type-{{rental.category}}">true house</h2>
+          <!-- TODO: Display title -->
+          <h1 class="rental-title">Some Title</h1>
+          <!-- TODO: Display city -->
+          <h2 class="rental-city">New York</h2>
           <div class="rental-room-info">
-            <span><i class="fa fa-building"></i>{{rent.numOfRooms}} bedrooms</span>
-            <span><i class="fa fa-user"></i>{{rent.numOfRooms + 4}} guests</span>
-            <span><i class="fa fa-bed"></i>{{rent.numOfRooms + 2}} beds</span>
+            <!-- TODO: Display numOfRooms -->
+            <span><i class="fa fa-building"></i>{4 bedrooms</span>
+              <!-- TODO: Display numOfRooms + 4 -->
+            <span><i class="fa fa-user"></i> 8 guests</span>
+            <!-- TODO: Display numOfRooms + 2 -->
+            <span><i class="fa fa-bed"></i> 6 beds</span>
           </div>
+          <!-- TODO: Display description -->
           <p class="rental-description">
-            {{rent.description}}
+            {{rental.description}}
           </p>
           <hr>
           <div class="rental-assets">

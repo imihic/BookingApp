@@ -1,5 +1,7 @@
 import {Component} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
+import {RentService} from '../shared/rent.service';
+import {Rent} from '../shared/rent.model';
 
 @Component({
   selector: 'rent-detail',
@@ -7,14 +9,17 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./rent-detail.component.scss']
 })
 export class RentDetailComponent {
-  rentId = '';
+  rent: Rent;
+
   //DEPENDANCY INJECTION
-  constructor(private route: ActivatedRoute) {
+  constructor(private rentService: RentService, private route: ActivatedRoute) {
   }
 
   ngOnInit() {
     this.route.params.subscribe( params => {
-      this.rentId = params['id'];
+      this.rentService.getRentById(params['id']).subscribe(rent => {
+        this.rent = rent;
+      })
     })
   }
 }

@@ -1,4 +1,5 @@
-@import 'book-colors';
+  
+@import 'bwm-colors';
 
 #rentalDetails {
   .upper-section {
@@ -10,7 +11,7 @@
   }
 
   .details-section {
-    color: $dark-grey-color;
+    color: $dark-gray-color;
     .rental {
       &-type {
         font-size: 14px;

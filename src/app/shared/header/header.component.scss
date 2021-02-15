@@ -18,15 +18,4 @@
     font-size: 18px;
   }
 
-  .book-btn-main {
-    border-color: $dark-red-color;
-    color: $dark-red-color;
-
-    &:hover,&:focus,&:active {
-      background-color: $dark-red-color;
-      border-color: $dark-red-color;
-      color: white;
-      box-shadow: none;
-    }
-  }
 }
