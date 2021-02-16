@@ -30,4 +30,8 @@ export class RegisterComponent implements OnInit {
       form.controls[controlName].markAsDirty();
     })
   }
+
+  get diagnostic(): string {
+    return JSON.stringify(this.registerFormData);
+  }
 }
