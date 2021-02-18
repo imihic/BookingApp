@@ -4,6 +4,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {LoginComponent} from './login/login.component';
 import {RegisterComponent} from './register/register.component';
 import {forbiddenEmailDirective} from '../shared/validators/forbidden-email.directive';
+import {SameAsDirective} from '../shared/validators/same-as.directive';
 
 
 
@@ -11,7 +12,8 @@ import {forbiddenEmailDirective} from '../shared/validators/forbidden-email.dire
   declarations: [
     LoginComponent,
     RegisterComponent,
-    forbiddenEmailDirective
+    forbiddenEmailDirective,
+    SameAsDirective
   ],
   imports: [
     CommonModule,

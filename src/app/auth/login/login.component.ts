@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {AbstractControl, FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {forbiddenEmailValidator} from '../../shared/validators/functions';
+import {forbiddenEmailValidator, sameAsValidator} from '../../shared/validators/functions';
 
 @Component({
   selector: 'bwm-login',
